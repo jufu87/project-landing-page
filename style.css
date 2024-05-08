@@ -7,25 +7,37 @@
 }
 
 body {
-        
+    display: flex;
+    flex-direction: column;
 }
 
+/*  
 body, html {
 }
 
 .body-div {
     
-}
+}                  */
 
 .body-div {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    min-height: 100px;
+    margin: 0;
    
 }
+
+
 
 img {
     flex: 0 1 0;  /* play around with the first one aka flex grow, later. */
 }
+
+button {
+    background-color: #3882F6;
+}
+
 
 section {
     padding: 48px;
@@ -38,6 +50,32 @@ section {
         flex-wrap: wrap;
     }
 
+        .headers {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px 0 20px;
+            width: 70%;
+        }
+
+            .header-logo {
+                display: flex; 
+            }
+            
+            .header-links {
+                display: flex  
+            }
+
+        
+            /* .section1.section2 
+                display: flex;
+                height: 50vh;
+                
+            } { */
+
+
+/* -------------------------------------------------------------- */
+
+        
     .section2 {
         display: flex;
         justify-content: center;
@@ -45,31 +83,237 @@ section {
         flex-wrap: wrap;
     }
 
+        .top-box {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            flex-wrap: wrap;
+        }
+        
+            .top-box-left {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 400px;
+            padding: 20px;
+            flex: 1 1 0;
+            
+            
+            }
+            
+                .top-box-left > p {
+                    flex-wrap: wrap;
+                }
+
+                .button-wrap1 {
+                    display: flex;
+                    justify-content: flex-start;   
+                    margin-top: auto;
+                    max-width: 100px;
+                }
+
+                    .signup-button-1 {
+                        min-width: 100px;
+                        min-height: 25px;
+                    }
+
+            .top-box-right {
+                display: flex;
+                padding: 20px;
+                
+            }
+
+
+
+
+
+
+/* ------------------------------------------------------------- */
+
     .section3 {
         display: flex;
         justify-content: center;
-        background-color: #331f37;
+        background-color: white;
         flex-wrap: wrap;
+        
+        /* height: 50vh; */
 
     }
+
+        .section3-wrap {
+            display: flex;
+            flex-direction: column;
+            
+            margin: auto;
+            width: 60%;
+            flex-wrap: wrap;
+            max-width: 1000px;
+        }
+    
+             
+            .section3-box1 {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+                .section3-box1 > p {
+                    color: black;
+                }
+    
+            .section3-box2 {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                
+                
+            }
+
+                .section3-img-card {
+                    max-width: 150px;
+                }
+
+                    .section3-img-card > img {
+                        border: solid blue 3px;
+                        border-radius: 15px;
+                    }
+
+                    .section3-img-card > p {
+                        color: black;
+                    }
+
+
+
+
+
+
+/* ------------------------------------------------------------ */
 
     .section4 {
         display: flex;
         justify-content: center;
-        background-color: #1f3726;
+        background-color: #E5E7EB;
         flex-wrap: wrap;
     }
+
+        .section4-wrap {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            width: 60%;
+            flex-wrap: wrap;
+            padding: 48px;
+            max-width: 1000px;
+           
+        }
+
+            .quote {
+                
+                text-align: center;
+                align-self: center;
+                font-size: 36px;
+                max-width: 1000px;
+              
+                
+            }
+
+                .quote > p {
+                    color: black;
+                }
+
+            .author {
+               
+                text-align: end;
+                margin-top: 20px;
+                
+                
+                
+            }
+
+                .author > p {
+                    color: black;
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------- */
 
     .section5 {
         display: flex;
         justify-content: center;
-        background-color: #5779ad;
+        background-color: white;
         flex-wrap: wrap;
     }
+
+        .section5-wrap {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            width: 70%;
+            flex-wrap: wrap;
+            padding: 48px;
+            
+            
+        }
+
+            .section5-box {
+                display: flex;
+                align-self: center;
+                justify-content: space-evenly;
+                align-items: center;
+                background-color: #3882F6;
+                border-radius: 8px;
+                margin: 0 20px 0 20px;;
+                padding: 32px 48px 32px 48px;
+                width: 100%;
+                flex-wrap: wrap;
+                
+                
+            }
+
+                /* .section5-paragraphs { 
+                    
+                } */
+
+                    .section5-paragraph1 {
+                        font-weight: bold;
+                        
+                    }
+
+                .signup-button-2 {
+                    
+                    min-width: 100px;
+                    min-height: 25px;
+                    max-width: 100px;
+                    max-height: 25px;
+                    border: solid white 1px;
+                    border-radius: 8px;
+                }
+
+
+/* -------------------------------------------------------------- */
 
     .section6 {
         display: flex;
         justify-content: center;
-        background-color: #ad5757;
-        flex-wrap: wrap;
+        background-color: #1F2937;
+        padding: 30px 0 30px 0;
+        
     }
+
+        .section6-wrap {
+            display: flex;
+        }
+
+            .section6-wrap > p {
+                text-align: center;
+            }
