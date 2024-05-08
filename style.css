@@ -1,9 +1,26 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Lightitalic';
+    src: url(/fonts/Roboto/Roboto-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url(/fonts/Roboto/Roboto-Thin.ttf);
+}
+
 * {
     box-sizing: border-box;
     list-style: none;
     color: white;                                                    /* this is temporary */
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', Helvetica, sans-serif
+    
 }
 
 body {
@@ -61,10 +78,20 @@ section {
             .header-logo {
                 display: flex; 
             }
+
+                .header-logo > * {
+                    font-size: 24px;
+                    color: #F9FAF8;
+                }
             
             .header-links {
-                display: flex  
+                display: flex;  
+                gap: 18px;
             }
+
+                .header-links > li * {
+                    color: #e5e7eb;
+                }
 
         
             /* .section1.section2 
@@ -90,6 +117,8 @@ section {
             width: 70%;
             flex-wrap: wrap;
             padding: 0 20px 0 20px;
+            
+            
         }
         
             .top-box-left {
@@ -102,6 +131,17 @@ section {
             
             }
             
+                .top-box-title {
+                    font-size: 48px;
+                    font-weight: bolder;
+                    color: #F9FAF8;
+                }
+
+                .top-box-body {
+                    font-size: 18px;
+                    color: #e5e7eb;
+                }
+
                 .top-box-left > p {
                     flex-wrap: wrap;
                 }
@@ -116,6 +156,9 @@ section {
                     .signup-button-1 {
                         min-width: 100px;
                         min-height: 25px;
+                        border-style: none;
+                        border-radius: 8px;
+                        margin-bottom: 16px;
                     }
 
             .top-box-right {
@@ -143,11 +186,13 @@ section {
         .section3-wrap {
             display: flex;
             flex-direction: column;
-            
+            align-items: center;
             margin: auto;
             width: 60%;
             flex-wrap: wrap;
             max-width: 1000px;
+            gap: 48px;
+            flex: 1;
         }
     
              
@@ -155,6 +200,9 @@ section {
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
+                font-size: 36px;
+                font-weight: bolder;
+                color: #1F2937;
             }
 
                 .section3-box1 > p {
@@ -163,14 +211,16 @@ section {
     
             .section3-box2 {
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: space-between;
                 flex-wrap: wrap;
-                
+                margin-bottom: 48px;
+                width: 1000px;
                 
             }
 
                 .section3-img-card {
-                    max-width: 150px;
+                    max-width: 200px;
+                    
                 }
 
                     .section3-img-card > img {
@@ -179,7 +229,11 @@ section {
                     }
 
                     .section3-img-card > p {
-                        color: black;
+                        padding-top: 6px;
+                        font-size: 18px;
+                        font-family: 'Roboto-Thin';
+                        color: #1F2937;
+                        text-align: center;
                     }
 
 
@@ -200,31 +254,31 @@ section {
             display: flex;
             flex-direction: column;
             margin: auto;
-            width: 60%;
+            width: 1000px;
             flex-wrap: wrap;
-            padding: 48px;
-            max-width: 1000px;
-           
+            padding: 48px 32px 48px 32px;
+          
         }
 
             .quote {
-                
-                text-align: center;
+                display: flex;
                 align-self: center;
-                font-size: 36px;
-                max-width: 1000px;
+                flex-wrap: wrap;
+                flex: 1;
               
-                
             }
 
                 .quote > p {
-                    color: black;
+                    font-size: 36px;
+                    font-family: 'Roboto-Lightitalic';
+                    color: #1F2937;
                 }
 
             .author {
-               
-                text-align: end;
+                display: flex;
+                justify-content: flex-end;
                 margin-top: 20px;
+                padding-right: 48px;
                 
                 
                 
@@ -268,18 +322,24 @@ section {
             .section5-box {
                 display: flex;
                 align-self: center;
-                justify-content: space-around;
+                justify-content: center;
                 align-items: center;
                 background-color: #3882F6;
                 border-radius: 8px;
                 
-                padding: 32px 0px 32px 0px;
+                padding: 32px 32px 32px 32px;
                 width: 100%;
                 flex-wrap: wrap;
                 
                 
             }
 
+                .section5-box-content {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 1000px;
+                }
+                
                 /* .section5-paragraphs { 
                     
                 } */
@@ -289,15 +349,15 @@ section {
                         
                     }
 
-                .signup-button-2 {
-                    
-                    min-width: 100px;
-                    min-height: 25px;
-                    max-width: 100px;
-                    max-height: 25px;
-                    border: solid white 1px;
-                    border-radius: 8px;
-                }
+                    .signup-button-2 {
+                        align-self: center;
+                        min-width: 100px;
+                        min-height: 25px;
+                        max-width: 100px;
+                        max-height: 25px;
+                        border: solid white 1px;
+                        border-radius: 8px;
+                    }
 
 
 /* -------------------------------------------------------------- */
