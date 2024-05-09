@@ -24,7 +24,7 @@
     color: white;                                                    /* this is temporary */
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', Helvetica, sans-serif
+    font-family: 'Roboto', 'Roboto-Lightitalic', 'Roboto-Thing', 'Roboto-Bold', Helvetica, sans-serif
     
 }
 
@@ -193,6 +193,7 @@ section {
                 }
 
                 .top-box-left > p {
+                    display: flex;
                     flex-wrap: wrap;
                 }
 
@@ -259,13 +260,14 @@ section {
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
-                font-size: 36px;
-                font-family: 'Roboto-Bold';
-                color: #1F2937;
+                
             }
 
                 .section3-box1 > p {
-                    color: black;
+                    font-size: 36px;
+                    font-family: 'Roboto-Bold';
+                    
+                    color: #1F2937;
                 }
     
             .section3-box2 {
